@@ -1,1 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.imgcont{
+    height: 80px;
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+button{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    border: none;
+    background-color: #0d4aad;
+    color: white;
+    cursor: pointer;
+}
+.inp{
+    width: 100%;
+    position: relative;
+}
+.icon{
+    font-size: 1.7rem;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+}
+input{
+    width: 100%;
+    padding: .8rem;
+    border-radius: 1.3rem;
+    border: none;
+    background-color: #d9d9d9;
+    outline: none;
+    font-size: 1.2rem;
+    /* background: url('./magnifying-glass-solid.svg') no-repeat scroll 0px 0px; */
+}
+input::placeholder{
+    text-align: center;
+    font-size: 1rem;
+}
+main{
+    padding: 1rem;
+}
+main h1{
+    border-radius: 2rem;
+    background-color: #0d4aad;
+    padding: .5rem;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+span{
+    color: #0d4aad;
+}
+.btncont{
+    display: flex;
+    justify-content: space-evenly;
+}
+.btncontmain{
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.content{
+    display: flex;
+    /* border: 1px solid black; */
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #0d4aad;
+    color: white;
+}
+.contentdiv{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 60% 20% 20%;
+    gap: 5px;
+    padding: 5px;
+}
+h2:last-child{
+    font-weight: 500;
+}
+h2:first-child{
+    font-weight: bold;
+}
+.selected{
+    color: white;
+    background-color: #3ab6ff;
+}
+
+@media screen and (max-width:778px){
+    .contentdiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .btncontmain{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    *{
+        font-size: 1.2rem;
+    }
+    input, button{
+        font-size: .8rem;
+    }
+    input::placeholder{
+        font-size: .8rem;
+    }
+    input{
+        padding: .5rem;
+    }
+    .icon{
+        top: -3px;
+    }
+    .imgcont{
+        min-height: 55px;
+        min-width: 80px;
+    }
+} 
 
